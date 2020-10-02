@@ -1,0 +1,9 @@
+@mixin linear {
+  transition: all 300ms linear;
+}
+
+@mixin smScreen {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

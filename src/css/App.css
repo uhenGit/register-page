@@ -1,0 +1,403 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #646464;
+}
+
+label {
+  display: block;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  background-color: #ebee41;
+  border: 1px solid white;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.btn:hover {
+  top: -3px;
+  background-color: white;
+  border-color: #282828;
+}
+
+.App {
+  background-color: white;
+  text-align: center;
+}
+
+header {
+  background-color: gray;
+  height: 60px;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav ul li {
+  padding: 5px 0;
+}
+
+header nav ul li a {
+  padding: 7px 15px;
+}
+
+main {
+  background-image: url("../assets/bckgr.jpg");
+  min-height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container {
+  width: 100%;
+}
+
+main .container h2 {
+  margin-bottom: 20px;
+}
+
+main .container .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .wrap .user_wrap {
+  width: 50%;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(40, 40, 40, 0.3);
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+
+main .container .wrap .user_wrap .user_info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container .wrap .user_wrap .user_info td {
+  padding: 3px 10px;
+}
+
+main .container .wrap .user_wrap .user_info:nth-child(odd) {
+  background-color: rgba(200, 197, 10, 0.3);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+main .container .wrap .user_wrap .user_info:nth-child(odd):hover {
+  background-color: rgba(200, 197, 10, 0.2);
+}
+
+main .container .wrap .user_wrap .user_info:nth-child(even) {
+  background-color: rgba(10, 197, 200, 0.3);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+main .container .wrap .user_wrap .user_info:nth-child(even):hover {
+  background-color: rgba(10, 197, 200, 0.2);
+}
+
+main .container .wrap .user_wrap .user_info .user_header {
+  text-align: left;
+}
+
+main .container .wrap .user_wrap .user_info .user_data {
+  text-align: right;
+}
+
+main .form_wrap {
+  width: 100%;
+}
+
+main .form_wrap form {
+  background-color: rgba(128, 128, 128, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 35px;
+  border-radius: 7px;
+  border: 1px solid rgba(40, 40, 40, 0.3);
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(40, 40, 40, 0.3);
+          box-shadow: 3px 3px 5px 1px rgba(40, 40, 40, 0.3);
+  max-width: 75%;
+  margin: 5px auto 0;
+}
+
+main .form_wrap form h2 {
+  font-size: 25px;
+}
+
+main .form_wrap form .subheader {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+main .form_wrap form label {
+  width: 45%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+}
+
+main .form_wrap form label input[type="text"] {
+  display: block;
+  width: 95%;
+  margin-top: 10px;
+  padding: 3px 0 3px 7px;
+  font-size: 15px;
+  border: 2px solid rgba(40, 40, 40, 0.3);
+  border-radius: 5px;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+main .form_wrap form label input[type="text"]:hover, main .form_wrap form label input[type="text"]:focus {
+  border-color: #646464;
+}
+
+main .form_wrap form .radio_block {
+  margin: 5px auto;
+  width: 45%;
+}
+
+main .form_wrap form .radio_block label {
+  cursor: pointer;
+  border-bottom: none;
+  padding: 8px;
+  width: 70%;
+}
+
+main .form_wrap form .radio_block label span {
+  margin-left: 8px;
+}
+
+main .form_wrap form select {
+  margin: 10px auto;
+  padding: 3px 0 3px 7px;
+  width: 40%;
+  font-size: 15px;
+  border: 1px solid rgba(40, 40, 40, 0.3);
+  border-radius: 5px;
+}
+
+main .form_wrap form .optional {
+  border-bottom: none;
+  opacity: 1;
+  height: 100%;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+main .form_wrap form .optional.hide {
+  height: 0;
+  opacity: 0;
+}
+
+main .form_wrap form .btn_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main .form_wrap form .btn_block button {
+  padding: 4px 15px;
+  color: #646464;
+  font-size: 18px;
+}
+
+main .form_wrap form .btn_block button:hover {
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+main .form_wrap form .btn_block button[type="reset"] {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+}
+
+main .form_wrap form .btn_block button[type="reset"]:hover {
+  background-color: white;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+main .form_wrap form .random_info {
+  width: 80%;
+  margin: 20px auto;
+}
+
+main .about h2 {
+  margin-bottom: 20px;
+}
+
+main .about .contact_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about .contact_container div {
+  font-size: 1.5rem;
+  border: 2px solid white;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+  color: rgba(40, 40, 40, 0.3);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+main .about .contact_container div:hover {
+  padding: 1.5rem 2rem;
+  background-color: #ebee41;
+  color: black;
+  border-color: #888888;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 10px #747474;
+          box-shadow: 2px 2px 10px #747474;
+}
+
+main .about .contact_container div:hover span {
+  color: black;
+}
+
+.outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transform: translate(0, -130%);
+          transform: translate(0, -130%);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.outer.show_alert {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.outer .inner {
+  position: relative;
+  top: 15%;
+  left: 25%;
+  background-color: #cdd7fa;
+  width: 50%;
+  height: 35%;
+  padding: 50px 0 30px;
+}
+
+.outer .inner h3 {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.outer .inner button.btn {
+  padding: 6px 15px;
+  top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  main .container .wrap .user_wrap {
+    width: 90%;
+  }
+  main .form_wrap form {
+    padding: 15px 25px;
+    max-width: 80%;
+  }
+  main .form_wrap form label,
+  main .form_wrap form .radio_block,
+  main .form_wrap form select {
+    width: 100%;
+  }
+  main .form_wrap form .btn_block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 75%;
+  }
+  main .form_wrap form .btn_block button {
+    font-size: 16px;
+    padding: 4px 10px;
+  }
+  main .form_wrap .outer .inner {
+    width: 70%;
+    height: 40%;
+    left: 15%;
+  }
+}
+/*# sourceMappingURL=App.css.map */

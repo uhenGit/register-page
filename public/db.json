@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "Satsuki",
+    "lastName": "Kusakabe",
+    "gender": "female",
+    "loyalty": "unavailable",
+    "regDate": "01.08.1989"
+  },
+  {
+    "firstName": "Gordon",
+    "lastName": "Freeman",
+    "gender": "male",
+    "loyalty": "mobileApp",
+    "regDate": "02.08.1989"
+  },
+  {
+    "firstName": "Torin",
+    "lastName": "Oakenshield",
+    "gender": "male",
+    "loyalty": "creditCard",
+    "regDate": "03.08.1989"
+  }
+]

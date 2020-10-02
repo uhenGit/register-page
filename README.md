@@ -1,4 +1,4 @@
-<h2>For starting the app in development mode:<br> clone this repository, change directory to /register<br >and run in terminal window:</h2>
+<h3>For starting the app in development mode:</h3><br> clone this repository, change directory to /register and run in terminal window:
 
 ### `npm install`
 
@@ -6,7 +6,7 @@
 
 Then open [http://localhost:3000](http://localhost:3000) in the browser.
 
-<h2>For starting the app in production mode:<br> if You didn't use the commands above - clone this repository, change directory to /register<br >and run in terminal window:</h2>
+<h3>For starting the app in production mode:</h3><br> <h4>if You didn't use the commands above</h4> - clone this repository, change directory to /register<br >and run in terminal window:
 
 ### `npm install`
 
@@ -14,7 +14,7 @@ Then open [http://localhost:3000](http://localhost:3000) in the browser.
 
 ### `npm run prod`
 
-<h2>if You have allready used <b>"npm install"</b>, <br>simply type:</h2>
+<h4>if You have allready used <b>"npm install"</b></h4> <br>simply type:
 
 ### `npm run build`
 
